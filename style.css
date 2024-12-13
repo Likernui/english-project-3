@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    font-family: 'Indie Flower', sans-serif;
+}
+.container {
+    max-width: 1695px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+  }
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list{
+    display: flex;
+    align-items: center;
+}
+
+.header__list > li {  
+    margin-right: 100px;
+    font-size: 40px;
+}
+.header__list > li:last-child {  
+    margin-right: 0px;
+}
+
+.btn:hover {
+    border-bottom: 3px solid #000;
+}
+
+.welcome .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.welcome p {
+    font-size: 64px;
+}
+
+.research-results__cards{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.research-results__cards img {
+    width: 403px;
+    height: 503px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px #223C5070;
+    margin: 0 30px;
+}
+
+
+.research-results p{
+    font-size: 96px;
+    text-align: center;
+    padding-top: 450px;
+    padding-bottom: 70px;
+}
+
+.title{
+    font-size: 96px;
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 110px;
+}
+
+.importance__cards{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.importance__card {
+    width:333px;
+    height: 347px;
+    border: 0px solid #000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    box-shadow: 2px 2px 10px #223C5070;  
+}
+
+.card-title{
+    font-size: 32px;
+    padding-top: 13px;
+}
+
+.card-subtitle{
+    font-size: 20px;
+    color:#726E6E;  
+}
+
+.importance__card-subtitle, .importance__card-title{
+    margin: 10px 0;
+}
+
+.final-result__cards{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 200px;
+}
+
+.final-result__card {
+    width:350px;
+    height: 370px;
+    border: 0px solid #000;
+    border-radius: 15px;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 10px #223C5070;  
+}
+
+.final-result__card .card-subtitle{
+    padding-bottom: 50px;
+}
+
+.final-result__card:hover{
+    background-color: #C57878;
+    transition: .3s ease;
+    .card-title{
+        color: white;
+    }
+    .card-subtitle{
+        color: black;
+    }
+}
+
+.bx {
+    font-size: 64px;
+}
+
+.importance__card:first-child:hover{
+    background-color: #c57878;
+    transition: .3s ease;
+    .card-title{
+        color: white;
+    }
+    .card-subtitle{
+        color: black;
+    }
+    .bxs-graduation{
+        color: white;
+    }
+}
+
+.importance__card:nth-child(2):hover{
+    background-color: #7889c5;
+    transition: .3s ease;
+    .card-title{
+        color: white;
+    }
+    .card-subtitle{
+        color: black;
+    }
+    .bx-book-open{
+        color: white;
+    }
+}
+
+.importance__card:last-child:hover{
+    background-color: #c5a178;
+    transition: .3s ease;
+    .card-title{
+        color: white;
+    }
+    .card-subtitle{
+        color: black;
+    }
+    .bx-desktop{
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__list > li {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .welcome p {
+        font-size: 32px;
+    }
+
+    .research-results__cards {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 35px;
+    }
+
+    .research-results__cards img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .title, .research-results p {
+        font-size: 48px;
+        padding-top: 30px;
+    }
+
+    .importance__cards {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 35px;
+    }
+
+    .importance__card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .final-result__cards {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    .final-result__card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .bx {
+        font-size: 48px;
+    }
+}
+.footer {  
+    background: #808080;
+}  
+.footer .container {
+    padding: 30px 0;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+    text-align: center;
+}
+@media (max-width: 768px) and (min-width: 481px) {
+    .header__list > li {
+        font-size: 28px;
+        margin-right: 50px;
+    }
+
+    .welcome p {
+        font-size: 48px;
+    }
+
+    .research-results__cards {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .research-results__cards img {
+        width: 80%;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .title, .research-results p {
+        font-size: 72px;
+        padding-top: 150px;
+    }
+    .importance__card
+    .importance__cards {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+    }
+
+    .importance__card {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+
+    .final-result__cards {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    .final-result__card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .bx {
+        font-size: 56px;
+    }
+    .footer .container {
+        padding: 15px 0;  
+        flex-wrap: wrap;
+    }
+    .footer .container > * { 
+        width: 100%;  
+        margin-bottom: 10px;  
+    }
+}
+@media (max-width: 480px) { 
+    .footer .container {  
+        padding: 20px 0;  
+    }
+    .footer .container > * { 
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+}
